@@ -6,16 +6,21 @@
     .youTubeLink
         display inline-block
 
+        img
+            float left
+            border-radius $radius $radius 0 0
+
         &:hover
             .triangle
-                border-color transparent transparent transparent $hover
+                top 257px
+
             p
                 background $hover
 
         .triangle
             position relative
             z-index 2
-            top -260px
+            top 260px
             width 0
             margin auto
             right -50%
@@ -27,6 +32,10 @@
 
         p
             button()
+            border-radius 0 0 $radius $radius
+            float left
+            max-width none
+            width 900px
             margin auto
             display block
 

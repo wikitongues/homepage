@@ -609,7 +609,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
     'id': ("optInPublicityClause"),
     'checked': ("view.optInPublicityClause")
   },hashTypes:{'type': "STRING",'id': "STRING",'checked': "ID"},hashContexts:{'type': depth0,'id': depth0,'checked': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
-  data.buffer.push("<label for=\"optInPublicityClause\">Wikitongues may use this video and all its component parts in the production of other media.</label></li>\n    </ul>\n    <button class=\"submit\" type=\"submit\" ");
+  data.buffer.push("<label for=\"optInPublicityClause\">“Wikitongues may use this video in the production of other media. (Optional)”</label></li>\n    </ul>\n    <button class=\"submit\" type=\"submit\" ");
   data.buffer.push(escapeExpression(helpers.action.call(depth0, "submit", {hash:{
     'target': ("view")
   },hashTypes:{'target': "ID"},hashContexts:{'target': depth0},contexts:[depth0],types:["STRING"],data:data})));
