@@ -9,6 +9,8 @@
         &:hover
             .triangle
                 border-color transparent transparent transparent $hover
+            p
+                background $hover
 
         .triangle
             position relative
@@ -24,14 +26,9 @@
             border-color transparent transparent transparent #fff
 
         p
-            color $secondary-blue
-            width 100%
-            text-align center
+            button()
+            margin auto
             display block
-
-        &:hover
-            p
-                color $hover
 
     p
         display block
