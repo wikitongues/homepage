@@ -33,6 +33,11 @@
         {{release-forms}}
       </li>
       <li class="checkbox">{{input type="checkbox" id="releaseForm" checked=view.releaseForm}}<label for="releaseForm">I have read and accept the release form (Required)</label></li>
+      <li>
+        <a class="secondaryLink" {{action "openOPC"}}>Read Opt-In Publicity Clause</a>
+        {{opt-in-publicity-clause}}
+      </li>
+      <li class="checkbox">{{input type="checkbox" id="optInPublicityClause" checked=view.optInPublicityClause}}<label for="optInPublicityClause">Wikitongues may use this video and all its component parts in the production of other media.</label></li>
     </ul>
     <button class="submit" type="submit" {{action "submit" target=view}}>Send</button>
     {{get-involved-email}}

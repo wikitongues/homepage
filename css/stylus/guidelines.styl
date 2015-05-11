@@ -1,11 +1,12 @@
-.guidelines, .termsOfService
+.guidelines, .termsOfService, .publicityClause
   display none
 
   .page
+    width 100%
     display inline-block
     font-size 67.5%
     background #eee !important
-    padding-bottom 4em
+    padding 20px 20px 3em 20px
 
     h1
       margin-top 0
@@ -18,10 +19,15 @@
       margin-top 0
       width initial
       border none
+      font-size 1em
 
       &:hover
+        color $hover
         border none
         background white
+
+    p
+      float none
 
   p, h4, li
     clear both
@@ -40,19 +46,19 @@
 
     li
       display list-item
-      margin 1em 0
+      margin 1em 0 1em 2em
       line-height 1.8em
+      max-width 700px
 
-      p
-        a
-          padding 0.2em
-          background lighten($hover, 40%)
-          margin 0 -0.2em
-          border-radius $radius
+      a
+        padding 0.2em
+        background lighten($hover, 40%)
+        margin 0 -0.2em
+        border-radius $radius
 
-          &:hover
-            background $hover
-            color initial
+        &:hover
+          background $hover
+          color initial
 
   td
     width 25%

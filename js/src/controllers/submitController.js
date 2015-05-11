@@ -5,6 +5,9 @@ App.SubmitController = Ember.Controller.extend({
     },
     openTOS: function () {
       $(".termsOfService").toggle()
+    },
+    openOPC: function () {
+      $(".publicityClause").toggle()
     }
   }
 })

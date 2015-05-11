@@ -37,7 +37,8 @@ App.SubmitView = Ember.View.extend({
               "<br/>Transcription: "+this.get("transcription")+
               "<br/>Translation: "+this.get("translation")+
               "<br/>Message: "+this.get("message")+
-              "<br/>Release Form: "+this.get("releaseForm")
+              "<br/>Release Form: "+this.get("releaseForm")+
+              "<br/>Opt-In Publicity Clause: "+this.get("optInPublicityClause")
           }
         }
        }).done(function(response) {

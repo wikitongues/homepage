@@ -264,6 +264,19 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 });
 
+Ember.TEMPLATES["components/opt-in-publicity-clause"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<div class=\"publicityClause\">\n  <div class=\"page\">\n    <h1>Opt-In Publicity Clause</h1>\n    <button ");
+  data.buffer.push(escapeExpression(helpers.action.call(depth0, "hideOPC", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["STRING"],data:data})));
+  data.buffer.push(">Close</button>\n    <p>By agreeing to the opt-in publicity clause, you hereby affirm that you irrevocably grant Wikitongues and its licensees, successors and assigns the right to license, distribute and use this video, including any pictures, portraits or likeness as captured in a still image from the footage, as well as audio content, in any and all media and for any use whatsoever (except illegal or pornographic), including without limitation, Wikitongues art, stock, advertising, trade and promotion, in perpetuity.</p>\n  </div>\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+  return buffer;
+  
+});
+
 Ember.TEMPLATES["components/release-forms"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
@@ -272,7 +285,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
 
   data.buffer.push("<div class=\"termsOfService\">\n  <div class=\"page\">\n    <h1>Release Form</h1>\n    <button ");
   data.buffer.push(escapeExpression(helpers.action.call(depth0, "hideTOS", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["STRING"],data:data})));
-  data.buffer.push(">Close</button>\n    <p>For good and valuable consideration I acknowledge as received, and by checking this release I grant as follows:</p>\n    <ol>\n      <li>I irrevocably grant to Wikitongues and its licensees, successors, and assigns the right to license and use the digital video taken of me on the date of recording, including my voice, picture, portrait or likeness as captured in a still image (the “footage”) in any and all media and for any use whatsoever (except illegal or pornographic), including without limitation, Wikitongues, art, stock, advertising, trade and promotion, in perpetuity. If I should receive a copy of the footage, I shall only use it for my own personal use and I shall not authorize anyone else to use it. I agree and acknowledge I have no commercial monetary rights to the footage and that Wikitonguesl owns all rights to the footage, including the right to copyright the footage.</li>\n      <li>I agree that no use of this footage need be submitted to me for any further approval and that Wikitongues shall be without liability to me for any distortion or illusionary effect or adverse result to me on account of the publication, distribution or broadcast of the footage. I agree that the footage may be combined with other material and may be cropped, altered or modified. I consent to the use of my name or a fictitious name in association with this footage.</li>\n      <li>I understand that my personal information will not be made publicly available but may be used as required or necessary directly in relation to the licensing of the footage and may be retained as long as necessary to fulfill this purpose, including being transferred to countries with differing data protection and privacy laws where it may be stored, accessed and used.</li>\n      <li>I release, discharge and agree to hold harmless Wikitongues and its licensees, successors, and assigns from any liability arising out of or in connection with the use of the content, including any and all claims for defamation, libel or slander and or invasion of privacy or publicity.</li>\n      <li>I hereby warrant that I am of full age and have every right to contract in my own name in the above regard.  I state further that I have read the above authorization, release and agreement, prior to its execution, and that I am fully familiar with the contents thereof. This agreement shall be binding upon me, my heirs, successors, and assigns.</li>\n      <li>I agree that this release is irrevocable, worldwide and perpetual and will be governed by the laws of the State of New York and the United States of America.</li>\n    </ol>\n  </div>\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+  data.buffer.push(">Close</button>\n    <p>By submitting a video to Wikitongues, you hereby affirm:</p>\n    <ol>\n      <li>that you have secured the explicit consent of the individual or individuals who appear in this video;</li>\n      <li>that you either possess or have obtained the legal rights to share this video online;</li>\n      <li>that you irrevocably grant Wikitongues and its licensees, successors and assigns the rights to this video, to be distributed under a <a href=\"https://creativecommons.org/licenses/by-nc/3.0/us/\" target=\"_blank\">Creative Commons Noncommercial Attribution License</a>, and;</li>\n      <li>that you agree and acknowledge that you have no commercial or monetary rights to the footage as distributed by Wikitongues.</li>\n    </ol>\n  </div>\n</div>\n\n\n\n\n\n\n\n\n\n");
   return buffer;
   
 });
@@ -440,7 +453,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 
 
-  data.buffer.push("<section class=\"page legal\">\n  <h1>Legal</h1>\n  <div class=\"term\">\n    <h2>Terms of Service</h2>\n    <p>By submitting a video to Wikitongues, you hereby agree:</p>\n    <ol>\n      <li><p>to have secured the consent of the individual or individuals who appear in that video to record them,</p></li>\n      <li><p>that you either possess or have obtained the legal rights to share this video online, and </p></li>\n      <li><p>that you irrevocably grant Wikitongues and its licensees, successors and assigns the right to license and distribute and use the video of you, including your voice, picture, portrait or likeness as captured in a still image from the footage, in any and all media and for any use whatsoever (except illegal or pornographic), including without limitation, Wikitongues, art, stock, advertising, trade and promotion, in perpetuity.</p></li>\n    </ol>\n    <p>If you should receive a copy of the footage, you shall only use it for your own personal use and you shall not authorize anyone else to use it.</p>\n    <p>You agree and acknowledge that you have no commercial monetary rights to the footage and that Wikitongues owns all rights to the footage, including the right to copyright the footage.</p>\n    </div>\n    <div class=\"term\">\n      <h2>Privacy Policy</h2>\n      <p>Wikitongues will never give or sell your personal information to any third-party organization or individual without your explicit consent.</p>\n    </div>\n</section>");
+  data.buffer.push("<section class=\"page legal\">\n  <h1>Legal</h1>\n  <div class=\"term\">\n    <h2>Terms of Service</h2>\n    <p>By submitting a video to Wikitongues, you hereby affirm:</p>\n    <ol>\n      <li><p>that you have secured the explicit consent of the individual or individuals who appear in this video;</p></li>\n      <li><p>that you either possess or have obtained the legal rights to share this video online;</p></li>\n      <li><p>that you irrevocably grant Wikitongues and its licensees, successors and assigns the rights to this video, to be distributed under a <a href=\"https://creativecommons.org/licenses/by-nc/3.0/us/\" target=\"_blank\">Creative Commons Noncommercial Attribution License</a>, and;</p></li>\n      <li><p>that you agree and acknowledge that you have no commercial or monetary rights to the footage as distributed by Wikitongues.</p></li>\n    </ol>\n    </div>\n    <div class=\"term\">\n      <h2>Privacy Policy</h2>\n      <p>Wikitongues will never give or sell your personal information to any third-party organization or individual without your explicit consent.</p>\n    </div>\n</section>");
   
 });
 
@@ -585,7 +598,18 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
     'id': ("releaseForm"),
     'checked': ("view.releaseForm")
   },hashTypes:{'type': "STRING",'id': "STRING",'checked': "ID"},hashContexts:{'type': depth0,'id': depth0,'checked': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
-  data.buffer.push("<label for=\"releaseForm\">I have read and accept the release form (Required)</label></li>\n    </ul>\n    <button class=\"submit\" type=\"submit\" ");
+  data.buffer.push("<label for=\"releaseForm\">I have read and accept the release form (Required)</label></li>\n      <li>\n        <a class=\"secondaryLink\" ");
+  data.buffer.push(escapeExpression(helpers.action.call(depth0, "openOPC", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["STRING"],data:data})));
+  data.buffer.push(">Read Opt-In Publicity Clause</a>\n        ");
+  stack1 = helpers._triageMustache.call(depth0, "opt-in-publicity-clause", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["ID"],data:data});
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("\n      </li>\n      <li class=\"checkbox\">");
+  data.buffer.push(escapeExpression((helper = helpers.input || (depth0 && depth0.input),options={hash:{
+    'type': ("checkbox"),
+    'id': ("optInPublicityClause"),
+    'checked': ("view.optInPublicityClause")
+  },hashTypes:{'type': "STRING",'id': "STRING",'checked': "ID"},hashContexts:{'type': depth0,'id': depth0,'checked': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("<label for=\"optInPublicityClause\">Wikitongues may use this video and all its component parts in the production of other media.</label></li>\n    </ul>\n    <button class=\"submit\" type=\"submit\" ");
   data.buffer.push(escapeExpression(helpers.action.call(depth0, "submit", {hash:{
     'target': ("view")
   },hashTypes:{'target': "ID"},hashContexts:{'target': depth0},contexts:[depth0],types:["STRING"],data:data})));
