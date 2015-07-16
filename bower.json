@@ -20,5 +20,8 @@
     "ember": "~1.8.1",
     "jquery": "~2.1.1",
     "handlebars": "~2.0.0"
+  },
+  "resolutions": {
+    "handlebars": ">= 1.0.0 < 2.0.0"
   }
 }
