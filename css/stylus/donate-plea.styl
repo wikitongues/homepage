@@ -1,0 +1,69 @@
+.donate-overlay
+  position fixed
+  z-index 30
+  background $blue
+  opacity .2
+  top 0
+  bottom 0
+  left 0
+  right 0
+
+.donate-component
+  position absolute
+  z-index  40
+  background #EEEEEE
+  border-radius $radius
+  border 1px solid #ddd
+  box-shadow 0 2px 4px rgba(0,0,0,.3)
+  width 512px
+  left 50%
+  margin 1% 0 1% -256px
+  padding-bottom 1em
+
+  button
+    float right
+    position absolute
+    z-index 2
+    top 1em
+    right 1em
+    button()
+    background white
+    margin-top 0
+    width initial
+    border none
+    font-size 1em
+
+    // &:hover
+    //   transition color 0s
+    //   color white
+
+  h1
+    font-family $sans
+    padding .5em 3em .5em 1em
+    background #fff
+    margin 0
+    text-align left
+    box-shadow 0 1px 2px rgba(0,0,0,.1)
+
+  p
+    width 450px
+    font-size 1.2em
+    padding 0 1em
+    margin 1em auto
+    font-family $serif
+
+  a
+    button()
+    width 80%
+    display block
+    font-size 1.1em
+    box-shadow 0 2px 4px rgba(0,0,0,.1)
+    margin auto
+
+    &:hover
+      color $blue
+
+  &.hidePlea
+    margin-top -50px
+    opacity 0
+    transition margin-top .1s ease-in-out, opacity .1s ease-in-out

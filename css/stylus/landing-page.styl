@@ -12,7 +12,18 @@
 
         &:hover
             .triangle
-                top 257px
+                animation twitch .3s ease-in-out
+
+                @keyframes twitch
+                    0%
+                        transform rotate(0deg)
+                    20%
+                        transform rotate(5deg)
+                    60%
+                        transform rotate(-5deg)
+                    100%
+                        transform rotate(0deg)
+                // top 257px
 
             p
                 background $hover
