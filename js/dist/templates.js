@@ -193,7 +193,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
 
   data.buffer.push("<div class=\"donate-component\">\n  <button ");
   data.buffer.push(escapeExpression(helpers.action.call(depth0, "closePlea", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["STRING"],data:data})));
-  data.buffer.push(">close</button>\n  <a href=\"https://www.fracturedatlas.org/site/fiscal/profile?id=11735\">Help us change the world. Donate today!</a>\n</div>");
+  data.buffer.push("><img src=\"img/close.png\" alt=\"close\"></button>\n  <a href=\"https://www.fracturedatlas.org/site/fiscal/profile?id=11735\">Change the world with us. Donate today!</a>\n</div>");
   return buffer;
   
 });

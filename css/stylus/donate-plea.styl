@@ -10,22 +10,29 @@
 
 .donate-component
   background lighten($hover, 40%)
-  border 1px solid #ddd
+  border 1px solid lighten($hover, 20%)
   box-shadow 0 2px 4px rgba(0,0,0,.3)
   width 100%
+  padding .5%
 
   button
     button()
+    background transparent
+    padding 1.2em
     float right
     font-size 1em
-    margin .5em
-    width initial
+    margin 0
+    border-left 1px solid #dedede
+
+    img
+      float left
+      height 10px
 
   a
     button()
     background #fafafa
-    margin .5em auto
-    width 80%
+    margin 0
+    width 100%
     display block
     font-size 1.1em
     box-shadow 0 2px 4px rgba(0,0,0,.1)
