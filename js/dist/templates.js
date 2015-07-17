@@ -78,7 +78,9 @@ function program19(depth0,data) {
   data.buffer.push("© 2014 Wikitongues, Inc., All Rights Reserved");
   }
 
-  data.buffer.push("<nav>\n  <div class=\"logo\">\n    ");
+  stack1 = helpers._triageMustache.call(depth0, "donate-plea", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["ID"],data:data});
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("\n<nav>\n  <div class=\"logo\">\n    ");
   stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{
     'tagName': ("li")
   },hashTypes:{'tagName': "STRING"},hashContexts:{'tagName': depth0},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "index", options) : helperMissing.call(depth0, "link-to", "index", options));
@@ -93,7 +95,7 @@ function program19(depth0,data) {
     'tagName': ("li")
   },hashTypes:{'tagName': "STRING"},hashContexts:{'tagName': depth0},inverse:self.noop,fn:self.program(5, program5, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "mission", options) : helperMissing.call(depth0, "link-to", "mission", options));
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
-  data.buffer.push("\n    \n    \n    ");
+  data.buffer.push("\n    ");
   stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{
     'tagName': ("li")
   },hashTypes:{'tagName': "STRING"},hashContexts:{'tagName': depth0},inverse:self.noop,fn:self.program(7, program7, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "get_involved", options) : helperMissing.call(depth0, "link-to", "get_involved", options));
@@ -113,7 +115,7 @@ function program19(depth0,data) {
     'tagName': ("li")
   },hashTypes:{'classNames': "STRING",'tagName': "STRING"},hashContexts:{'classNames': depth0,'tagName': depth0},inverse:self.noop,fn:self.program(9, program9, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "team", options) : helperMissing.call(depth0, "link-to", "team", options));
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
-  data.buffer.push("\n            \n            \n            \n            ");
+  data.buffer.push("\n            ");
   stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{
     'classNames': ("footerLink"),
     'tagName': ("li")
@@ -189,9 +191,9 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   var buffer = '', escapeExpression=this.escapeExpression;
 
 
-  data.buffer.push("<div class=\"donate-overlay\"></div>\n<div class=\"donate-component\">\n  <button ");
+  data.buffer.push("<div class=\"donate-component\">\n  <button ");
   data.buffer.push(escapeExpression(helpers.action.call(depth0, "closePlea", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["STRING"],data:data})));
-  data.buffer.push(">Close</button>\n  <h1>An important message  </h1>\n  <p>Wikitongues relies on support from our community. If you believe in what we do, help us change the world.</p>\n  <a href=\"https://www.fracturedatlas.org/site/fiscal/profile?id=11735\">Donate today!</a>\n</div>");
+  data.buffer.push(">close</button>\n  <a href=\"https://www.fracturedatlas.org/site/fiscal/profile?id=11735\">Help us change the world. Donate today!</a>\n</div>");
   return buffer;
   
 });
@@ -461,9 +463,7 @@ function program3(depth0,data) {
   data.buffer.push("Become a volunteer");
   }
 
-  stack1 = helpers._triageMustache.call(depth0, "donate-plea", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["ID"],data:data});
-  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
-  data.buffer.push("\n<section class=\"banner index\"></section>\n<section class=\"page index\">\n    <div class=\"information\">\n        <h1>Every language in the world</h1>\n        <a class=\"youTubeLink\" href=\"https://www.youtube.com/user/WikiTongues\" target=\"_blank\">\n            <img src=\"img/youTubeLink.png\" alt=\"\">\n            <div class=\"triangle\"></div>\n            <p>Join us on YouTube</p>\n        </a>\n        <br>\n        <p>Wikitongues is a global effort to record and provide access to every language in the world. We’re a network of volunteers on every continent who work to bring you new language videos every week, driven by a commitment to the value of diversity. Be a part of our movement.</p>\n        <ul class=\"activities\">\n          <li>\n            ");
+  data.buffer.push("<section class=\"banner index\"></section>\n<section class=\"page index\">\n    <div class=\"information\">\n        <h1>Every language in the world</h1>\n        <a class=\"youTubeLink\" href=\"https://www.youtube.com/user/WikiTongues\" target=\"_blank\">\n            <img src=\"img/youTubeLink.png\" alt=\"\">\n            <div class=\"triangle\"></div>\n            <p>Join us on YouTube</p>\n        </a>\n        <br>\n        <p>Wikitongues is a global effort to record and provide access to every language in the world. We’re a network of volunteers on every continent who work to bring you new language videos every week, driven by a commitment to the value of diversity. Be a part of our movement.</p>\n        <ul class=\"activities\">\n          <li>\n            ");
   stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{
     'tagName': ("button")
   },hashTypes:{'tagName': "STRING"},hashContexts:{'tagName': depth0},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "submit", options) : helperMissing.call(depth0, "link-to", "submit", options));
