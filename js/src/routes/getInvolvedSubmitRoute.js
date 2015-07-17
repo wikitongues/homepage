@@ -1,4 +1,4 @@
-App.SubmitRoute = Ember.Route.extend(App.ResetScroll, {
+App.GetInvolvedSubmitRoute = Ember.Route.extend(App.ResetScroll, {
   model: function() {
     return {
       title: "Thank you for submitting a video!",

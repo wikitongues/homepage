@@ -1,5 +1,5 @@
-App.SubmitView = Ember.View.extend({
-  templateName: "submit",
+App.GetInvolvedSubmitView = Ember.View.extend({
+  templateName: "get_involved/submit",
   name: "",
   email: "",
   link: "",
@@ -46,6 +46,7 @@ App.SubmitView = Ember.View.extend({
         if(status == 'sent')
           $("section.success").show();
           $("body").addClass("modalFreeze");
+          $(".getInvolvedSubmit ul li input, .getInvolvedSubmit textarea").val("").attr("checked", false);
        });
     }
   }

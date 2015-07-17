@@ -1,5 +1,5 @@
-App.ContactView = Ember.View.extend({
-  templateName: "contact",
+App.GetInvolvedContactView = Ember.View.extend({
+  templateName: "get_involved/contact",
   name: "",
   email: "",
   message: "",
@@ -32,6 +32,7 @@ App.ContactView = Ember.View.extend({
         if(status == 'sent')
           $("section.success").show();
           $("body").addClass("modalFreeze");
+          $(".getInvolvedContact ul li input, .getInvolvedContact textarea").val("");
        });
     }
   }
