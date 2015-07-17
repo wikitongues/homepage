@@ -335,7 +335,7 @@ function program5(depth0,data) {
   data.buffer.push("Contact");
   }
 
-  data.buffer.push("<section class=\"subheader\">\n  <ul>\n    ");
+  data.buffer.push("<section class=\"getInvolved subheader\">\n  <ul>\n    ");
   stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{
     'classNames': ("subheaderLink"),
     'tagName': ("li")
