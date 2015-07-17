@@ -3,6 +3,10 @@
   body
     padding-top 0 !important
 
+    .donate-component
+      a
+        font-size 1em
+
     nav
       top initial
       position initial
@@ -48,6 +52,7 @@
           background-image url("../img/banner-mobile.jpg")
           max-height 125px
           width 100%
+          background-size cover
 
         &.mission
           max-height 240px
@@ -70,11 +75,20 @@
           li
             font-weight 400
 
+        &.getInvolved
+          ul
+            li
+              width 33%
+              float left
+
       .page
         padding 0
 
         h1
           font-weight 400
+
+        p
+          font-size .8em
 
         ul.activities
               margin 0
@@ -94,6 +108,8 @@
               font-size 1.3em
 
             a.youTubeLink
+              width 100%
+
               img
                 width 120%
                 margin-left -10%
@@ -102,7 +118,10 @@
                 margin -16px
                 border-width 20px 0 20px 33px
                 top 0
-                margin -42% -16px 37%
+                margin 24% -16px
+
+              p
+                width 100%
 
         &.mission
           padding 0 30px 30px 30px
@@ -197,10 +216,14 @@
 
                 &.checkbox
                   input
-                    margin 11px 0 11px 10px
+                    float left
+                    width 20px
+                    margin 19px
+                    margin-right 0
 
                   label
                     width 80%
+                    float left
 
             textarea
               margin 0

@@ -1,5 +1,5 @@
-App.VolunteerView = Ember.View.extend({
-  templateName: "volunteer",
+App.GetInvolvedVolunteerView = Ember.View.extend({
+  templateName: "get_involved/volunteer",
   name: "",
   email: "",
   location: "",
@@ -39,6 +39,7 @@ App.VolunteerView = Ember.View.extend({
         if(status == 'sent')
           $("section.success").show();
           $("body").addClass("modalFreeze");
+          $(".getInvolvedVolunteer ul li input, .getInvolvedVolunteer textarea").val("").attr("checked", false);
        });
     }
   }
