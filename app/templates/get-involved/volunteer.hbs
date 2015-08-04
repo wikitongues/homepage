@@ -1,11 +1,11 @@
-{{get-involved-nav}}
+{{get-involved-nav tagName="section" classNames="getInvolved subheader"}}
 <section class="page form">
   <form class="getInvolvedVolunteer">
     <h1>Become a volunteer</h1>
     <p>Apply to join our community as a volunteer or ambassador.</p>
     <a class="secondaryLink" {{action "openGuidelines"}}>Volunteer Guidelines</a>
     {{!-- {{#link-to "volunteerGuidelines" classNames="secondaryLink"}}Volunteering Guidelines{{/link-to}} --}}
-    {{guide-volunteer}}
+    {{guide-volunteer classNames="guidelines"}}
     <ul>
       <li><p>About you</p></li>
       <li>{{input required="true" value=view.name placeholder="Name (Required)"}}</li>
@@ -25,7 +25,6 @@
     {{get-involved-contact}}
   </form>
 </section>
-{{!-- {{form-modal title=title text=text}} --}}
 <section class="success">
     <div class="modal">
       <h1>Thank you for applying!</h1>

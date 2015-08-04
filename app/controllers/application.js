@@ -3,7 +3,8 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions: {
     closeDonationBanner: function () {
-      Ember.$(".donate-component").hide();
+      Ember.$(".donate-overlay").hide();
+      Ember.$(".donate-component").addClass('hidePlea').delay(250).queue(function() {$(this).hide()});
     }
   }
 });
