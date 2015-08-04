@@ -10,7 +10,7 @@ Router.map(function() {
     this.route('mission');
     this.route('team');
   });
-  this.route('getInvolved', {path:'get_involved'}, function() {
+  this.route('getInvolved', {path:'get-involved'}, function() {
     this.route('submit');
     this.route('volunteer');
     this.route('contact');

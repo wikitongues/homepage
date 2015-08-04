@@ -5,7 +5,7 @@
     <p>Join the conversation, and share your language with the world.</p>
     <a class="secondaryLink" {{action "openGuidelines"}}>Video Guidelines</a>
     {{!-- {{#link-to "submitGuidelines" classNames="secondaryLink"}}Video Guidelines{{/link-to}} --}}
-    {{guidelines-video}}
+    {{guide-video}}
     <ul>
       <li><p>About you</p></li>
       <li>{{input value=view.name placeholder="Name (Required)" required=1}}</li>
@@ -30,7 +30,7 @@
       <li>
         {{!-- {{#link-to "legal" classNames="secondaryLink"}}Read Release Form{{/link-to}} --}}
         <a class="secondaryLink" {{action "openTOS"}}>Read Release Form</a>
-        {{release-forms}}
+        {{release-form}}
       </li>
       <li class="checkbox">{{input type="checkbox" id="releaseForm" checked=view.releaseForm}}<label for="releaseForm">I have read and accept the release form (Required)</label></li>
       <li>
