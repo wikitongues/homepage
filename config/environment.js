@@ -4,6 +4,13 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'homepage-cli',
     environment: environment,
+    contentSecurityPolicy: {
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
+      'img-src': "'self' https://s3.amazonaws.com http://fredericoandrade.com",
+      'font-src': "'self' http://fonts.gstatic.com",
+      'style-src': "'self' http://fonts.googleapis.com",
+      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' http://www.google-analytics.com/analytics.js http://www.googletagmanager.com/gtm.js?id=GTM-5W4CXN"
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

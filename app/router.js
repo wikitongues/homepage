@@ -6,6 +6,16 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('about', function() {
+    this.route('mission');
+    this.route('team');
+  });
+  this.route('getInvolved', {path:'get_involved'}, function() {
+    this.route('submit');
+    this.route('volunteer');
+    this.route('contact');
+  });
+  this.route('legal');
 });
 
 export default Router;
