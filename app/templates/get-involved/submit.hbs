@@ -1,43 +1,43 @@
 {{get-involved-nav tagName="section" classNames="getInvolved subheader"}}
 <section class="page form">
   <form class="getInvolvedSubmit">
-    <h1>Submit a video</h1>
+    {{!-- <h1>Submit a video</h1> --}}
     <p>Join the conversation, and share your language with the world.</p>
     <a class="secondaryLink" {{action "openGuidelines"}}>Video Guidelines</a>
     {{guide-video classNames="guidelines"}}
     <ul>
       <li><p>About you</p></li>
-      <li>{{input value=view.name placeholder="Name (Required)" required=1}}</li>
-      <li>{{input value=view.email placeholder="Email (Required)" required=1}}</li>
-      <li>{{input value=view.link placeholder="Link to Video File (Dropbox, Google Drive, Mediafire) (Required)" required=1}}</li>
+      <li>{{input value=name placeholder="Name (Required)" required=1}}</li>
+      <li>{{input value=email placeholder="Email (Required)" required=1}}</li>
     </ul>
     <ul>
       <li><p>About the speaker</p></li>
-      <li>{{input value=view.speaker placeholder="What is the speaker's name? (Required)" required=1}}</li>
-      <li>{{input value=view.language placeholder="What languages are used in this video? (Required)" required=1}}</li>
+      <li>{{input value=speaker placeholder="What is the speaker's name? (Required)" required=1}}</li>
+      <li>{{input value=language placeholder="What languages are used in this video? (Required)" required=1}}</li>
     </ul>
     <ul>
       <li><p>About the video</p></li>
-      <li>{{input value=view.videoLocation placeholder="Where was this video made? (Required)" required=1}}</li>
-      <li>{{textarea value=view.transcription placeholder="Transcribe the video (optional)"}}</li>
-      <li>{{textarea value=view.translation placeholder="Translate the video (optional)"}}</li>
+      <li>{{input value=link placeholder="Link to video file (Dropbox, Google Drive, Mediafire) (Required)" required=1}}</li>
+      <li>{{input value=videoLocation placeholder="Where was this video made? (Required)" required=1}}</li>
+      <li>{{textarea value=transcription placeholder="Transcribe the video (optional)"}}</li>
+      <li>{{textarea value=translation placeholder="Translate the video (optional)"}}</li>
     </ul>
     <p>Leave us a message</p>
-    {{textarea value=view.message placeholder="Message (optional)"}}
+    {{textarea value=message placeholder="Message (optional)"}}
     <ul>
       <li><p>Release form</p></li>
       <li>
         <a class="secondaryLink" {{action "openTOS"}}>Read Release Form</a>
         {{release-form classNames="termsOfService"}}
       </li>
-      <li class="checkbox">{{input type="checkbox" id="releaseForm" checked=view.releaseForm}}<label for="releaseForm">I have read and accept the release form (Required)</label></li>
+      <li class="checkbox">{{input type="checkbox" id="releaseForm" checked=releaseForm}}<label for="releaseForm">I have read and accept the release form (Required)</label></li>
       <li>
         <a class="secondaryLink" {{action "openOPC"}}>Read Opt-In Publicity Clause</a>
         {{publicity-clause classNames="publicityClause"}}
       </li>
-      <li class="checkbox">{{input type="checkbox" id="optInPublicityClause" checked=view.optInPublicityClause}}<label for="optInPublicityClause">“Wikitongues may use this video in the production of other media. (Optional)”</label></li>
+      <li class="checkbox">{{input type="checkbox" id="optInPublicityClause" checked=optInPublicityClause}}<label for="optInPublicityClause">“Wikitongues may use this video in the production of other media. (Optional)”</label></li>
     </ul>
-    <button class="submit" type="submit" {{action "submit" target=view}}>Send</button>
+    <button class="submit" type="submit" {{action "submit"}}>Send</button>
     {{get-involved-contact}}
   </form>
 </section>

@@ -1,16 +1,17 @@
 <section class="banner team">
-    {{!-- {{google-maps latitude="20" longitude="0" markers=markers}} --}}
 </section>
 {{about-nav tagName="section" classNames="subheader"}}
 <section class="page team">
     <h1>We're from around the world</h1>
     <ul>
-        {{#each}}
-            <li>
-                <img src={{photo}} title={{languages}}>
-                <p>{{name}}</p>
-                <p class="country">{{location}}</p>
-            </li>
+        {{#each model as |member|}}
+            {{#if member.photo}}
+                <li>
+                    <img src={{member.photo}} title={{member.languages}}>
+                    <p>{{member.name}}</p>
+                    <p class="country">{{member.location}}</p>
+                </li>
+            {{/if}}
         {{/each}}
     </ul>
     {{#link-to "getInvolved.volunteer" tagName="button"}}Become a volunteer today{{/link-to}}

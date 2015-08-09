@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'homepage-cli',
     environment: environment,
     contentSecurityPolicy: {
-      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com https://mandrillapp.com/api/1.0/messages/send.json",
       'img-src': "'self' https://s3.amazonaws.com http://fredericoandrade.com",
       'font-src': "'self' http://fonts.gstatic.com",
       'style-src': "'self' http://fonts.googleapis.com",

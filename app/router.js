@@ -16,6 +16,11 @@ Router.map(function() {
     this.route('contact');
   });
   this.route('legal');
+  this.route('products', function() {
+    this.route('poly');
+    this.route('views');
+  });
+  this.route('press');
 });
 
 export default Router;

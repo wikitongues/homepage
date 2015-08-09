@@ -7,15 +7,16 @@
     overflow hidden
 
     &.index, &.team, &.mission, &.getInvolved
-        height 550px
         background-size cover
 
+    &.team, &.mission, &.getInvolved, &.products, &.poly, &.views
+        height 550px
+
     &.index
-        max-height 380px
+        height 380px
         background-image url("../assets/images/banner.jpg")
         background-position-x 50%
         background-size auto 380px
-
 
     &.team
         background-image url("../assets/images/map.jpg")
@@ -29,6 +30,9 @@
     &.getInvolved
         background-image url("../assets/images/getInvolvedBanner.jpg")
         background-position-y 50%
+
+    &.products, &.poly, &.views
+        background-color lighten($blue, 95%)
 
     img
         width 100%
