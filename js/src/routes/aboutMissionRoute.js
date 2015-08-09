@@ -1,1 +1,0 @@
-App.AboutMissionRoute = Ember.Route.extend(App.ResetScroll)
