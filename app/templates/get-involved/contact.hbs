@@ -1,0 +1,21 @@
+{{get-involved-nav tagName="section" classNames="getInvolved subheader"}}
+<section class="page form">
+  <form action="" class="contact-form  getInvolvedContact">
+    {{!-- <h1>Contact</h1> --}}
+    <p>We're always eager to hear from you!</p>
+    <ul>
+      <li>{{input title="Name" required="true" value=name placeholder="Name (Required)"}}</li>
+      <li>{{input title="Email"required="true" type="email" value=email placeholder="Email (Required)"}}</li>
+    </ul>
+    {{textarea title="Message"value=message placeholder="Message (optional)"}}
+    <button class="submit" type="submit" {{action "submit"}}>Send</button>
+    {{get-involved-contact}}
+  </form>
+</section>
+<section class="success">
+    <div class="modal">
+      <h1>Thank you for your message!</h1>
+      <p>We're glad you reached out.</p>
+      <button {{action "closeModal"}}>Okay!</button>
+    </div>
+</section>
