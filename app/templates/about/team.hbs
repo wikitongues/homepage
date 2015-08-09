@@ -5,12 +5,14 @@
     <h1>We're from around the world</h1>
     <ul>
         {{#each model as |member|}}
-            {{#if member.photo}}
-                <li>
-                    <img src={{member.photo}} title={{member.languages}}>
-                    <p>{{member.name}}</p>
-                    <p class="country">{{member.location}}</p>
-                </li>
+            {{#if member.show}}
+                {{#if member.photo}}
+                    <li>
+                        <img src={{member.photo}} title={{member.languages}}>
+                        <p>{{member.name}}</p>
+                        <p class="country">{{member.location}}</p>
+                    </li>
+                {{/if}}
             {{/if}}
         {{/each}}
     </ul>
