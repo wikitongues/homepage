@@ -1,54 +1,121 @@
+@import "bower_components/nib"
+
 .index
-    h1
-        margin 30px auto 50px auto
-        text-align center
+  h1
+    margin 30px auto 50px auto
+    text-align center
 
-    .youTubeLink
-        display inline-block
+  .youTubeLink
+    display inline-block
 
-        img
-            float left
-            border-radius $radius $radius 0 0
+    img
+      float left
+      border-radius $radius $radius 0 0
 
-        &:hover
-            .triangle
-                animation twitch .3s ease-in-out
+    &:hover
+      .triangle
+        animation twitch .3s ease-in-out
 
-                @keyframes twitch
-                    0%
-                        transform rotate(0deg)
-                    20%
-                        transform rotate(5deg)
-                    60%
-                        transform rotate(-5deg)
-                    100%
-                        transform rotate(0deg)
-                // top 257px
+        @keyframes twitch
+            0%
+              transform rotate(0deg)
+            20%
+              transform rotate(5deg)
+            60%
+              transform rotate(-5deg)
+            100%
+              transform rotate(0deg)
+        // top 257px
 
-            p
-                background $hover
+      p
+        background $hover
 
-        .triangle
-            position relative
-            z-index 2
-            top 260px
-            width 0
-            margin auto
-            right -50%
-            margin -27px
-            height 0
-            border-style solid
-            border-width: 32.5px 0 32.5px 56.3px;
-            border-color transparent transparent transparent #fff
-
-        p
-            button()
-            border-radius 0 0 $radius $radius
-            float left
-            max-width none
-            width 900px
-            margin auto
-            display block
+    .triangle
+      position relative
+      z-index 2
+      top 260px
+      width 0
+      margin auto
+      right -50%
+      margin -27px
+      height 0
+      border-style solid
+      border-width: 32.5px 0 32.5px 56.3px;
+      border-color transparent transparent transparent #fff
 
     p
+      button()
+      border-radius 0 0 $radius $radius
+      float left
+      max-width none
+      width 900px
+      margin auto
+      display block
+
+  p
+    display block
+
+  .progress
+    margin-top 3em
+
+    .progressBarContainer
+      margin 1em 0
+      width 100%
+      background lighten($blue, 95%)
+      height 5px
+      border-radius $radius
+      overflow hidden
+
+      span.progressBar
+        width 2.057142857%
+        background $blue
+        height 5px
         display block
+
+    ul.progressList
+      margin-bottom 2em
+      display inline-block
+      width 100%
+      -webkit-columns 5
+
+      li
+        width 100%
+        float left
+        padding 0 0 0 4px
+        border-radius $radius
+        background lighten($blue, 95%)
+        margin 1px 0
+
+        &.link
+          background #fff
+
+          &:hover
+            background $hover
+
+            a
+              color $blue
+
+        a,p
+          display block
+          float left
+          width 100%
+          font-family $sans
+          font-size .7em
+          line-height initial
+          margin 0
+          white-space nowrap
+          text-overflow ellipsis
+          overflow hidden
+
+  section.submit
+    font-family $sans
+
+    p
+      width 100%
+      text-align center
+      font-size .7em
+      color $secondary-blue
+
+      a
+        textLink()
+
