@@ -20,7 +20,13 @@ Router.map(function() {
     this.route('poly');
     this.route('views');
   });
-  this.route('press');
+  this.route('press', function() {
+    this.route('index', {path:'overview'});
+    this.route('product');
+    this.route('assets');
+    this.route('partners');
+    this.route('news');
+  });
 });
 
 export default Router;

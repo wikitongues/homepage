@@ -1,13 +1,16 @@
 <section class="banner press"></section>
-<section class="page">
-<h1>Press Kit</h1>
-<ul>
-  <li>Organizational Overview</li>
-  <li>Press Contact</li>
-  <li>Product Information</li>
-  <li>Media Assets</li>
-  <li>Partner Organizations</li>
-  <li>Notable Media Mentions</li>
-  <li>Past Press Releases</li>
-</ul>
+<section class="subheader">
+  <ul class="pressNav">
+    {{#link-to "press.index" tagName="li"}}Overview{{/link-to}}
+    {{#link-to "press.product" tagName="li"}}Product Information{{/link-to}}
+    {{#link-to "press.assets" tagName="li"}}Media Assets{{/link-to}}
+    {{#link-to "press.partners" tagName="li"}}Partner Organizations{{/link-to}}
+    {{#link-to "press.news" tagName="li"}}In the News{{/link-to}}
+  </ul>
 </section>
+<section class="page">
+  {{outlet}}
+  <h1>Press Contact</h1>
+  <p>press@wikitongues.org</p>
+</section>
+
