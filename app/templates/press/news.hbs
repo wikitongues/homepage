@@ -1,3 +1,11 @@
-<p>
-  Pitch
-</p>
+<section class="press">
+  <ul>
+    {{#each model as |press|}}
+      <a href={{press.url}}>
+        <h2>{{press.source}}</h2>
+        <p>{{press.date}}</p>
+        <p>{{press.description}}</p>
+      </a>
+    {{/each}}
+  </ul>
+</section>
