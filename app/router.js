@@ -19,6 +19,7 @@ Router.map(function() {
   this.route('products', function() {
     this.route('poly');
     this.route('views');
+    this.route('periodical');
   });
   this.route('press');
 });
