@@ -16,7 +16,6 @@
     margin 2em auto
     padding-left 2em
     font-size 1em
-    // text-align center
     font-family $sans
     color $secondary-blue
 
@@ -27,13 +26,20 @@
     font-size 1.3em
 
   ul
-    &.feature
-      display table
-      margin auto
-      padding 0
+    list-style-type none
+    display table
+    margin 2em auto
+    padding 0
+    min-width 560px
 
+    li
+      font-style italic
+      font-size 1.3em
+      line-height 1.4
+      font-family $serif
+
+    &.feature
       li
-        list-style-type none
         float left
         padding 115px 0
         margin 0 1em
@@ -42,3 +48,18 @@
         width 250px
         background lighten($secondary-blue, 50%)
         border-radius 100%
+
+    &.bla
+      li
+        float left
+        padding 0 0 115px 0
+        margin 0 1em
+        text-align center
+        height 250px
+        width 250px
+        // background lighten($secondary-blue, 50%)
+        border-radius 100%
+        overflow hidden
+
+        img
+          width 100%
