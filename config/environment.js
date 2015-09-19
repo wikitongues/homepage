@@ -11,7 +11,7 @@ module.exports = function(environment) {
       'style-src': "'self' http://fonts.googleapis.com",
       'script-src': "'self' 'unsafe-eval' 'unsafe-inline' http://www.google-analytics.com/analytics.js http://www.googletagmanager.com/gtm.js?id=GTM-5W4CXN"
     },
-    baseURL: '/',
+    baseURL: '/folder/press-kit/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
