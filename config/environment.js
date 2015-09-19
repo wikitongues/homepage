@@ -6,10 +6,11 @@ module.exports = function(environment) {
     environment: environment,
     contentSecurityPolicy: {
       'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com https://mandrillapp.com/api/1.0/messages/send.json",
-      'img-src': "'self' https://s3.amazonaws.com http://fredericoandrade.com",
+      'frame-src': "'self' https://airtable.com/embed/shrqS8yD7uUBR62VB",
+      'img-src': "'self' https://s3.amazonaws.com http://fredericoandrade.com https://static.airtable.com/images/airtable_database@2x.png",
       'font-src': "'self' http://fonts.gstatic.com",
-      'style-src': "'self' http://fonts.googleapis.com",
-      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' http://www.google-analytics.com/analytics.js http://www.googletagmanager.com/gtm.js?id=GTM-5W4CXN"
+      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
+      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' http://www.google-analytics.com/analytics.js http://www.googletagmanager.com/gtm.js?id=GTM-5W4CXN https://static.airtable.com/js/embed/airtable_embed.js https://static.airtable.com/js/embed/airtable_embed_main.js"
     },
     baseURL: '/',
     locationType: 'auto',
