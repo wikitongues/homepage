@@ -19,8 +19,12 @@ Router.map(function() {
   this.route('products', function() {
     this.route('poly');
     this.route('views');
+    this.route('periodical');
   });
   this.route('press');
+  this.route('videos', function() {
+    this.route('release');
+  });
 });
 
 export default Router;
