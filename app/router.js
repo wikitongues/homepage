@@ -25,6 +25,7 @@ Router.map(function() {
   this.route('videos', function() {
     this.route('release');
   });
+  this.route('form-page');
 });
 
 export default Router;

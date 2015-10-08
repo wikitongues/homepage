@@ -1,0 +1,148 @@
+{{outlet}}
+<div id="form-page">
+<h1>Upload an interview</h1>
+  <form action="">
+
+    <div class="grouping">
+      <h2>About you</h2>
+
+      <div class="input col-1">
+        <input id="name" type="text" name="name" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="name">Name</label>
+      </div>
+
+      <div class="input col-1">
+        <input id="email" type="text" name="email" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="email">Email</label>
+      </div>
+
+      <div class="input col-2">
+        <input id="location" type="text" name="location" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="location">Location</label>
+      </div>
+    </div>
+
+    <div class="grouping">
+      <h2>About the interviewee</h2>
+
+      <fieldset>
+        <legend>Are you the interviewee?</legend>
+        <ul>
+          <li>
+            <input type="radio" id="yes" name="interviewee" value="Y">
+            <label for="yes">Yes</label>
+          </li>
+          <li>
+            <input type="radio" id="no" name="interviewee" value="N">
+            <label for="no">No</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="input col-2">
+        <input id="interviewee-name" type="text" name="interviewee-name" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="interviewee-name">What is the interviewee's name?</label>
+      </div>
+
+      <div class="input col-2">
+        <input id="interviewee-language" type="text" name="interviewee-language" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="interviewee-language">What languages are used in this interview?</label>
+      </div>
+
+    </div>
+
+    <div class="grouping">
+      <h2>About the interview</h2>
+
+      <div class="input col-2">
+        <input id="interview-file" type="text" name="interview-file" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="interview-file">Link to interview file (Mediafire, Google Drive, Dropbox)</label>
+      </div>
+
+      <div class="input col-2">
+        <input id="interview-location" type="text" name="interview-location" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="interview-location">Where was the interview recorded</label>
+      </div>
+
+    </div>
+
+    <div class="grouping">
+      <h2>Optional</h2>
+
+      <div class="input col-2">
+        <textarea name="optional-transcription" id="optional-transcription" cols="30" rows="1" required></textarea>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <div class="hiddenDiv"></div>
+        <label for="optional-transcription">Transcribe the Interview</label>
+      </div>
+
+      <div class="input col-2">
+        <textarea name="optional-translations" id="optional-translations" cols="30" rows="1" required></textarea>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <div class="hiddenDiv"></div>
+        <label for="optional-translations">Translate the interview (Include language names)</label>
+      </div>
+
+      <div class="input col-2">
+        <textarea name="optional-message" id="optional-message" cols="30" rows="1" required></textarea>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <div class="hiddenDiv"></div>
+        <label for="optional-message">Send us a message</label>
+      </div>
+    </div>
+
+    <div class="grouping">
+      <h2>Release form</h2>
+
+      <div class="input col-2 checkbox">
+        <input id="release" name="release" type="checkbox" required>
+        <label for="release">I have read and accept the terms of the release form</label>
+        <a href="#">Read release form</a>
+      </div>
+
+    </div>
+
+    <div class="grouping">
+      <h2>Opt-in publicity clause</h2>
+
+      <div class="input col-2 checkbox">
+        <input id="publicity" name="publicity" type="checkbox" required>
+        <label for="publicity">Wikitongues may use this video in the production of other media. (Optional)</label>
+        <a href="#">Read opt-in publicity clause</a>
+      </div>
+
+    </div>
+  </form>
+</div>
+
+<script>
+  $(function() {
+    var hiddenDiv = $('.hiddenDiv'),
+      textarea = $('textarea'),
+      content = null;
+
+    textarea.on('keyup', function() {
+      content = $(this).val();
+      content = content.replace(/\n/g, '<br>');
+      hiddenDiv.html(content + '<br class="lbr">');
+      $(this).css('height', hiddenDiv.innerHeight());
+    })
+  })
+</script>
