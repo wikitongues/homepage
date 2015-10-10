@@ -1,6 +1,6 @@
 {{outlet}}
 <div id="form-page">
-<h1>Upload an interview</h1>
+<h1>Apply to join</h1>
   <form action="">
 
     <div class="grouping">
@@ -20,115 +20,141 @@
         <label for="email">Email</label>
       </div>
 
+      <div class="input col-1">
+        <input id="birthdate" type="text" name="birthdate" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="birthdate">Date of birth</label>
+      </div>
+
+      <div class="input col-1">
+        <input id="occupation" type="text" name="occupation" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="occupation">Occupation</label>
+      </div>
+
       <div class="input col-2">
         <input id="location" type="text" name="location" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label for="location">Location</label>
       </div>
+
+      <div class="input col-2">
+        <textarea name="languages" id="languages" cols="30" rows="1" required></textarea>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <div class="hiddenDiv"></div>
+        <label for="languages">What languages can we use with you?</label>
+      </div>
     </div>
 
     <div class="grouping">
-      <h2>About the interviewee</h2>
+      <h2>How would you like to contribute</h2>
 
-      <fieldset>
-        <legend>Are you the interviewee?</legend>
-        <ul>
-          <li>
-            <input type="radio" id="yes" name="interviewee" value="Y">
-            <label for="yes">Yes</label>
-          </li>
-          <li>
-            <input type="radio" id="no" name="interviewee" value="N">
-            <label for="no">No</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <div class="input col-2">
-        <input id="interviewee-name" type="text" name="interviewee-name" required>
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label for="interviewee-name">What is the interviewee's name?</label>
-      </div>
-
-      <div class="input col-2">
-        <input id="interviewee-language" type="text" name="interviewee-language" required>
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label for="interviewee-language">What languages are used in this interview?</label>
-      </div>
-
-    </div>
-
-    <div class="grouping">
-      <h2>About the interview</h2>
-
-      <div class="input col-2">
-        <input id="interview-file" type="text" name="interview-file" required>
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label for="interview-file">Link to interview file (Mediafire, Google Drive, Dropbox)</label>
-      </div>
-
-      <div class="input col-2">
-        <input id="interview-location" type="text" name="interview-location" required>
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label for="interview-location">Where was the interview recorded</label>
-      </div>
-
+        {{!-- <legend>Pick as many as you want</legend> --}}
+        <div class="input col-1 checkbox">
+          <input id="linguistics" name="linguistics" type="checkbox">
+          <label for="linguistics">Linguistics</label>
+        </div>
+        <div class="input col-1 checkbox">
+          <input id="software" name="software" type="checkbox">
+          <label for="software">Software development</label>
+        </div>
+        <div class="input col-1 checkbox">
+          <input id="content" name="content" type="checkbox">
+          <label for="content">Content acquisition</label>
+        </div>
+        <div class="input col-1 checkbox">
+          <input id="data" name="data" type="checkbox">
+          <label for="data">Data management</label>
+        </div>
+        <div class="input col-1 checkbox">
+          <input id="partnerships" name="partnerships" type="checkbox">
+          <label for="partnerships">Partnerships</label>
+        </div>
+        <div class="input col-1 checkbox">
+          <input id="copywriting" name="copywriting" type="checkbox">
+          <label for="copywriting">Copywriting</label>
+        </div>
+        <div class="input col-1 checkbox">
+          <input id="events" name="events" type="checkbox">
+          <label for="events">Events and programming</label>
+        </div>
+        <div class="input col-1 checkbox">
+          <input id="social-media" name="social-media" type="checkbox">
+          <label for="social-media">Social media</label>
+        </div>
+        <div class="input col-1 checkbox">
+          <input id="marketing" name="marketing" type="checkbox">
+          <label for="marketing">Marketing and PR</label>
+        </div>
+        <div class="input col-1 checkbox">
+          <input id="other" name="other" type="checkbox">
+          <label for="other">Other</label>
+        </div>
     </div>
 
     <div class="grouping">
       <h2>Optional</h2>
 
-      <div class="input col-2">
-        <textarea name="optional-transcription" id="optional-transcription" cols="30" rows="1" required></textarea>
+      <div class="input col-1">
+        <input id="facebook" type="text" name="facebook">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <div class="hiddenDiv"></div>
-        <label for="optional-transcription">Transcribe the Interview</label>
+        <label for="facebook">Facebook page</label>
       </div>
 
-      <div class="input col-2">
-        <textarea name="optional-translations" id="optional-translations" cols="30" rows="1" required></textarea>
+      <div class="input col-1">
+        <input id="twitter" type="text" name="twitter">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <div class="hiddenDiv"></div>
-        <label for="optional-translations">Translate the interview (Include language names)</label>
+        <label for="twitter">Twitter handle</label>
       </div>
 
-      <div class="input col-2">
-        <textarea name="optional-message" id="optional-message" cols="30" rows="1" required></textarea>
+      <div class="input col-1">
+        <input id="instagram" type="text" name="instagram">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <div class="hiddenDiv"></div>
-        <label for="optional-message">Send us a message</label>
+        <label for="instagram">Instagram profile</label>
       </div>
+
+      <div class="input col-1">
+        <input id="tumblr" type="text" name="tumblr">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="tumblr">Tumblr page</label>
+      </div>
+
+      <div class="input col-1">
+        <input id="youtube" type="text" name="youtube">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="youtube">YouTube channel</label>
+      </div>
+
     </div>
 
     <div class="grouping">
-      <h2>Release form</h2>
 
-      <div class="input col-2 checkbox">
-        <input id="release" name="release" type="checkbox" required>
-        <label for="release">I have read and accept the terms of the release form</label>
-        <a href="#">Read release form</a>
+      <div class="input col-2">
+        <textarea name="provenance" id="provenance" cols="30" rows="1"></textarea>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <div class="hiddenDiv"></div>
+        <label for="provenance">How did you come across Wikitongues?</label>
       </div>
 
-    </div>
-
-    <div class="grouping">
-      <h2>Opt-in publicity clause</h2>
-
-      <div class="input col-2 checkbox">
-        <input id="publicity" name="publicity" type="checkbox" required>
-        <label for="publicity">Wikitongues may use this video in the production of other media. (Optional)</label>
-        <a href="#">Read opt-in publicity clause</a>
+      <div class="input col-2">
+        <textarea name="optional-message" id="optional-message" cols="30" rows="1"></textarea>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <div class="hiddenDiv"></div>
+        <label for="optional-message">Optional message</label>
       </div>
-
     </div>
+
     <button>Submit</button>
   </form>
 </div>

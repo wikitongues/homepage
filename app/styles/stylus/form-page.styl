@@ -21,6 +21,7 @@ l()
 
 #form-page
   width 100%
+  margin auto
   display inline-block
 
   *
@@ -56,10 +57,10 @@ l()
         &.col-1
           width 50%
 
-          &:nth-of-type(1)
+          &:nth-of-type(n)
             padding-right 11px
 
-          &:nth-of-type(2)
+          &:nth-of-type(2n)
             padding-left 11px
 
             label
@@ -84,6 +85,7 @@ l()
           width 100%
           border none
           border-bottom 1px solid $c4
+          font-weight 300
 
           &:focus
             outline none
@@ -157,6 +159,8 @@ l()
             padding 10px 0
 
             label
+              font-weight 300
+              margin-left 10px
               color $c3
 
             input:checked ~ label
